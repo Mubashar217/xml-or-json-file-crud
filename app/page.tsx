@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [formData, setFormData] = useState<{ name: string }>({ name: "" });
-  const [dataList, setDataList] = useState<{ name: string }[]>([]);
+  const [dataList, setDataList] = useStdate<{ name: string }[]>([]);
   const [editIndex, setEditIndex] = useState<number | null>(null);
   const [viewFormat, setViewFormat] = useState<"json" | "xml">("json");
 
